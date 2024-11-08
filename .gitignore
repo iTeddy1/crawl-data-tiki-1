@@ -53,3 +53,5 @@ Thumbs.db
 *.ntvs*
 *.njsproj
 *.sln
+*.xlsx
+package-lock.json

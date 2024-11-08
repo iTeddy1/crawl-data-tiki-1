@@ -6,7 +6,7 @@ const fs = require("fs");
 const CATEGORY_URL = "https://tiki.vn/dien-thoai-smartphone/c1795";
 
 async function scrapeData() {
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
   await page.goto(CATEGORY_URL, { waitUntil: "networkidle2" });
 
@@ -38,7 +38,7 @@ async function scrapeData() {
     return items;
   });
 
-  await browser.close();
+  // await browser.close();
   return products;
 }
 
