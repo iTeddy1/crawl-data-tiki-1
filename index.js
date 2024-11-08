@@ -1,6 +1,6 @@
 const puppeteer = require("puppeteer");
 
-const CATEGORY_URL = "https://tiki.vn/laptop/c8095";
+const CATEGORY_URL = "https://tiki.vn/dien-thoai-smartphone/c1795";
 
 async function getProductData() {
   const browser = await puppeteer.launch({ headless: true });

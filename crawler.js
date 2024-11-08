@@ -3,7 +3,7 @@ const xlsx = require("xlsx");
 const fs = require("fs");
 
 // Define the URL for the Tiki category you want to scrape
-const CATEGORY_URL = "https://tiki.vn/laptop/c8095";
+const CATEGORY_URL = "https://tiki.vn/dien-thoai-smartphone/c1795";
 
 async function scrapeData() {
   const browser = await puppeteer.launch({ headless: true });
